@@ -1,0 +1,14 @@
+애너테이션 정리
+@SpringBootConfiguration
+스프링 부트 관련 설정을 나타내는 애너테이션
+
+@ComponentScan
+사용자가 등록한 빈을 읽고 등록하는 애너테이션, @Component라는 애너테이션을 가진 클래스들을 찾아 빈으로 등록하는 역할을 함
+실제로는 @Component 애너테이션보다는 용도에 따라 다른 애너테이션을 아래와 같이 사용함
+ 1. @Configuration : 설정 파일 등록
+ 2. @Repository : ORM 매핑
+ 3. @Controller, @RestController : 라우터
+ 4. @Service : 비즈니스 로직
+
+@EnableAutoConfiguration
+스프링 부트에서 자동 구성을 활성화하는 애너테이션, 스프링 부트 서버가 실행될 때 스프링 부트의 메타 파일을 읽고 정의된 설정을 자동으로 구성하는 역할을 수행함
